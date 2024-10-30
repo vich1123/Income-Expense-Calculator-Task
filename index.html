@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income-Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Income-Expense Calculator</h1>
+
+
+    <div class="balance">
+        <h2>Total Balance: <span id="total-balance">$0.00</span></h2>
+        <h2>Total Expenses: <span id="total-expenses">$0.00</span></h2>
+      </div>
+
+    <div class="form-section">
+      <input type="text" id="description" placeholder="Enter Description" />
+      <datalist id="descriptions">
+        <option value="Salary">Salary</option>
+        <option value="Grocery">Grocery</option>
+        <option value="Rent">Rent</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Entertainment">Entertainment</option>
+      </datalist>
+      <input type="number" id="amount" placeholder="Enter Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div class="transaction-list">
+      <h3>Transactions</h3>
+      <ul id="transactions"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
